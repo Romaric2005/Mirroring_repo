@@ -54,7 +54,7 @@ jobs:
     if: ${{ github.envent_name == 'push' }}
     steps:
       - name: check actions in the repository
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - uses: pixta-dev/repository-mirroring-action@v1
